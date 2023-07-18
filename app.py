@@ -123,7 +123,6 @@ def scrape_web(url):
                     "Comments" :main_review
         })
 
-        for tr in tbody.find_elements(By.XPATH,'.//tr')
 
 
 
