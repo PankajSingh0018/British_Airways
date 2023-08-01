@@ -1,0 +1,6 @@
+Pandas 
+nltk
+gensim
+matplotlib
+textblob
+scikit-learn
