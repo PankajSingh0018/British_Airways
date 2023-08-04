@@ -3,4 +3,7 @@ nltk
 gensim
 matplotlib
 textblob
+wordcloud
 scikit-learn
+numpy
+scipy

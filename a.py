@@ -5,6 +5,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from gensim.corpora.dictionary import Dictionary  # Correct the import statement
 from gensim.models.ldamodel import LdaModel
+from wordcloud import WordCloud
 
 # Load NLTK resources (if not already downloaded)
 nltk.download('stopwords')
@@ -34,7 +35,7 @@ dictionary = Dictionary(df['processed_text'])  # Use Dictionary method of corpor
 corpus = [dictionary.doc2bow(text) for text in df['processed_text']]
 
 # Topic Modeling (LDA)
-# num_topics = 5  # Adjust the number of topics as needed
+num_topics = 50 # Adjust the number of topics as needed
 lda_model = LdaModel(corpus, id2word=dictionary, passes=10)
 
 # Print and Interpret Topics
