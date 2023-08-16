@@ -1,4 +1,3 @@
-Pandas 
 nltk
 gensim
 matplotlib
@@ -7,3 +6,5 @@ wordcloud
 scikit-learn
 numpy
 scipy
+plotly-express
+pandas
